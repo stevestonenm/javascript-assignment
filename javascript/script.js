@@ -9,3 +9,7 @@ function changeColor() {
 function changeFont() {
 	document.getElementById("samuel").style.color = "red";
 }
+
+function sayWhat() {
+	document.getElementById("box").innerHTML = document.getElementById("boxContent").value;
+}
