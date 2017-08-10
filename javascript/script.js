@@ -30,7 +30,7 @@ function changeImage() {
 		document.getElementById("imgChange").src = "https://www.fillmurray.com/225/225";
 	}
 }
-/**
+
 $(document).ready(function() {
 	$("#getBacon").click(function() {
 		$.ajax({
@@ -42,49 +42,3 @@ $(document).ready(function() {
 		});
 	});
 });
-**/
-/**
-function jsBaconRequest() {
-
-	// URL of the API Endpoint
-	var requestUrl = "https://baconipsum.com/api/?type=meat-and-filler";
-
-	// create new request
-	var httpRequest = new XMLHttpRequest();
-
-	// if can't create httpRequest request, alert error message
-	if (!httpRequest) {
-		alert('Giving up :( Cannot create an XMLHTTP instance');
-		return false;
-	}
-
-	// run function that prints out response onreadystatechange
-	httpRequest.onreadystatechange = printJsBacon;
-
-	// open the request
-	httpRequest.open("GET", requestUrl, true);
-
-	// send the request
-	httpRequest.send();
-
-	// this function prints the bacon response to the screen
-	// or an error if an exception is thrown
-	function printJsBacon() {
-		try {
-			if(httpRequest.readyState === XMLHttpRequest.DONE) {
-				if (httpRequest.status === 200) {
-
-					//parse JSON
-					var bacon = JSON.parse(httpRequest.response);
-
-					//put parsed JSON on screen
-					document.getElementById("bacon").innerHTML = bacon;
-					console.log("you have Vanilla.js flavored bacon!");
-				}
-			}
-		} catch(e) {
-			alert("Exception: " + e.description);
-		}
-	}
-}
- **/

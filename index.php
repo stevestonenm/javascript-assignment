@@ -4,14 +4,14 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
+		<!-- jQuery   -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<!-- javascript -->
+		<script type="text/javascript" src="javascript/script.js"></script>
 		<!-- custom CSS stylesheet -->
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 
-		<!-- javascript -->
-		<script type="text/javascript" src="javascript/script.js"></script>
 
-		<!-- jQuery   -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
 		<title>JavaScript Challenge</title>
 	</head>
@@ -29,11 +29,15 @@
 
 		<div>
 			<h2>Who Loves Bacon?!!</h2>
-			<button id="getBacon" class="btn" onclick="jsBaconRequest();">I Love Bacon</button>
-			<div id="bacon"></div>
+			<button id="getBacon">I Love Bacon</button>
+			<div id="bacon">
+
+			</div>
 		</div>
 
-
+		<div>
+			<p>hello</p>
+		</div>
 		
 
 
