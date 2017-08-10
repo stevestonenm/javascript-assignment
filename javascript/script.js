@@ -30,7 +30,7 @@ function changeImage() {
 		document.getElementById("imgChange").src = "https://www.fillmurray.com/225/225";
 	}
 }
-
+/**
 $(document).ready(function() {
 	$("#getBacon").click(function() {
 		$.ajax({
@@ -42,7 +42,7 @@ $(document).ready(function() {
 		});
 	});
 });
-
+**/
 /**
 function jsBaconRequest() {
 
