@@ -27,20 +27,13 @@
 
 		<img src="https://www.fillmurray.com/225/225" alt="bill murray" id="imgChange" onclick="changeImage();">
 
+
+
 		<div>
 			<h2>Who Loves Bacon?!!</h2>
-			<button id="getBacon">I Love Bacon</button>
-			<div id="bacon">
-
-			</div>
+			<button onclick="populateBacon();">I Love Bacon</button>
+			<div id="baconText"></div>
 		</div>
-
-		<div>
-			<p>hello</p>
-		</div>
-		
-
-
 
 	</body>
 </html>

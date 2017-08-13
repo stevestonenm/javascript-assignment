@@ -31,14 +31,32 @@ function changeImage() {
 	}
 }
 
+
+ var baconData = [];
+/**
 $(document).ready(function() {
 	$("#getBacon").click(function() {
 		$.ajax({
 			method: "GET",
 			url: "https://baconipsum.com/api/?type=meat-and-filler"
 		}).done(function(reply) {
-			$("#bacon").html(reply);
-			console.log("you like bacon!!!");
+			baconData = reply;
 		});
 	});
 });
+**/
+$(document).ready(function() {
+	$.ajax({
+		method: "GET",
+		url: "https://baconipsum.com/api/?type=meat-and-filler"
+	}).done(function(reply) {
+		baconData = reply
+	});
+});
+
+function populateBacon() {
+	baconData.forEach(function(bacon) {
+		$("#baconText").append("<p></p>" + bacon + "<p></p>" + bacon + "<p></p>" + bacon)
+	})
+}
+
